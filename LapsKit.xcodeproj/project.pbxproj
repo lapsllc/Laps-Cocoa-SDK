@@ -7,9 +7,54 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		5A2764191C7497D300CB8B7D /* AuthenticationSession.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A2764041C7496A700CB8B7D /* AuthenticationSession.swift */; };
+		5A27641A1C7497D300CB8B7D /* PersistentContext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A27640E1C7496A700CB8B7D /* PersistentContext.swift */; };
+		5A27641B1C7497D300CB8B7D /* Human.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A27640D1C7496A700CB8B7D /* Human.swift */; };
+		5A27641C1C7497D300CB8B7D /* Friend.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A2764071C7496A700CB8B7D /* Friend.swift */; };
+		5A27641D1C7497D300CB8B7D /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A2764121C7496A700CB8B7D /* User.swift */; };
+		5A27641E1C7497D300CB8B7D /* BrandStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A2764061C7496A700CB8B7D /* BrandStore.swift */; };
+		5A27641F1C7497D300CB8B7D /* ProductStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A2764101C7496A700CB8B7D /* ProductStore.swift */; };
+		5A2764201C7497D300CB8B7D /* Brand.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A2764051C7496A700CB8B7D /* Brand.swift */; };
+		5A2764211C7497D300CB8B7D /* Gift.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A2764091C7496A700CB8B7D /* Gift.swift */; };
+		5A2764221C7497D300CB8B7D /* Product.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A27640F1C7496A700CB8B7D /* Product.swift */; };
+		5A2764231C7497D300CB8B7D /* FriendService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A2764081C7496A700CB8B7D /* FriendService.swift */; };
+		5A2764241C7497D300CB8B7D /* GiftDecorator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A27640A1C7496A700CB8B7D /* GiftDecorator.swift */; };
+		5A2764251C7497D300CB8B7D /* ServiceManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A2764111C7496A700CB8B7D /* ServiceManager.swift */; };
+		5A2764261C7497D400CB8B7D /* AuthenticationSession.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A2764041C7496A700CB8B7D /* AuthenticationSession.swift */; };
+		5A2764271C7497D400CB8B7D /* PersistentContext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A27640E1C7496A700CB8B7D /* PersistentContext.swift */; };
+		5A2764281C7497D400CB8B7D /* Human.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A27640D1C7496A700CB8B7D /* Human.swift */; };
+		5A2764291C7497D400CB8B7D /* Friend.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A2764071C7496A700CB8B7D /* Friend.swift */; };
+		5A27642A1C7497D400CB8B7D /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A2764121C7496A700CB8B7D /* User.swift */; };
+		5A27642B1C7497D400CB8B7D /* BrandStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A2764061C7496A700CB8B7D /* BrandStore.swift */; };
+		5A27642C1C7497D400CB8B7D /* ProductStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A2764101C7496A700CB8B7D /* ProductStore.swift */; };
+		5A27642D1C7497D400CB8B7D /* Brand.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A2764051C7496A700CB8B7D /* Brand.swift */; };
+		5A27642E1C7497D400CB8B7D /* Gift.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A2764091C7496A700CB8B7D /* Gift.swift */; };
+		5A27642F1C7497D400CB8B7D /* Product.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A27640F1C7496A700CB8B7D /* Product.swift */; };
+		5A2764301C7497D400CB8B7D /* FriendService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A2764081C7496A700CB8B7D /* FriendService.swift */; };
+		5A2764311C7497D400CB8B7D /* GiftDecorator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A27640A1C7496A700CB8B7D /* GiftDecorator.swift */; };
+		5A2764321C7497D400CB8B7D /* ServiceManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A2764111C7496A700CB8B7D /* ServiceManager.swift */; };
+		5A2764331C7497D400CB8B7D /* AuthenticationSession.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A2764041C7496A700CB8B7D /* AuthenticationSession.swift */; };
+		5A2764341C7497D400CB8B7D /* PersistentContext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A27640E1C7496A700CB8B7D /* PersistentContext.swift */; };
+		5A2764351C7497D400CB8B7D /* Human.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A27640D1C7496A700CB8B7D /* Human.swift */; };
+		5A2764361C7497D400CB8B7D /* Friend.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A2764071C7496A700CB8B7D /* Friend.swift */; };
+		5A2764371C7497D400CB8B7D /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A2764121C7496A700CB8B7D /* User.swift */; };
+		5A2764381C7497D400CB8B7D /* BrandStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A2764061C7496A700CB8B7D /* BrandStore.swift */; };
+		5A2764391C7497D400CB8B7D /* ProductStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A2764101C7496A700CB8B7D /* ProductStore.swift */; };
+		5A27643A1C7497D400CB8B7D /* Brand.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A2764051C7496A700CB8B7D /* Brand.swift */; };
+		5A27643B1C7497D400CB8B7D /* Gift.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A2764091C7496A700CB8B7D /* Gift.swift */; };
+		5A27643C1C7497D400CB8B7D /* Product.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A27640F1C7496A700CB8B7D /* Product.swift */; };
+		5A27643D1C7497D400CB8B7D /* FriendService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A2764081C7496A700CB8B7D /* FriendService.swift */; };
+		5A27643E1C7497D400CB8B7D /* GiftDecorator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A27640A1C7496A700CB8B7D /* GiftDecorator.swift */; };
+		5A27643F1C7497D400CB8B7D /* ServiceManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A2764111C7496A700CB8B7D /* ServiceManager.swift */; };
+		5A2764401C7497DB00CB8B7D /* Graphics-CocoaTouch.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A27640C1C7496A700CB8B7D /* Graphics-CocoaTouch.swift */; };
+		5A2764411C7497DC00CB8B7D /* Graphics-CocoaTouch.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A27640C1C7496A700CB8B7D /* Graphics-CocoaTouch.swift */; };
+		5A2764421C7497DD00CB8B7D /* Graphics-CocoaTouch.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A27640C1C7496A700CB8B7D /* Graphics-CocoaTouch.swift */; };
+		5A2764441C7497ED00CB8B7D /* Graphics-Cocoa.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A27640B1C7496A700CB8B7D /* Graphics-Cocoa.swift */; };
 		5A5F74EA1C74956300472CF1 /* LapsKit.h in Headers */ = {isa = PBXBuildFile; fileRef = 5A5F74E91C74956300472CF1 /* LapsKit.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		5A5F74F11C74956300472CF1 /* LapsKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5A5F74E61C74956300472CF1 /* LapsKit.framework */; };
 		5A5F74F61C74956300472CF1 /* LapsKitTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A5F74F51C74956300472CF1 /* LapsKitTests.swift */; };
+		5A5F750F1C74957B00472CF1 /* LapsKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5A5F75051C74957B00472CF1 /* LapsKit.framework */; };
+		5A5F75381C7495C900472CF1 /* LapsKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5A5F752E1C7495C900472CF1 /* LapsKit.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -20,15 +65,49 @@
 			remoteGlobalIDString = 5A5F74E51C74956300472CF1;
 			remoteInfo = LapsKit;
 		};
+		5A5F75101C74957B00472CF1 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 5A5F74DD1C74956300472CF1 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 5A5F75041C74957B00472CF1;
+			remoteInfo = "LapsKit OS X";
+		};
+		5A5F75391C7495C900472CF1 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 5A5F74DD1C74956300472CF1 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 5A5F752D1C7495C900472CF1;
+			remoteInfo = "LapsKit tvOS";
+		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		5A2764041C7496A700CB8B7D /* AuthenticationSession.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthenticationSession.swift; sourceTree = "<group>"; };
+		5A2764051C7496A700CB8B7D /* Brand.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Brand.swift; sourceTree = "<group>"; };
+		5A2764061C7496A700CB8B7D /* BrandStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BrandStore.swift; sourceTree = "<group>"; };
+		5A2764071C7496A700CB8B7D /* Friend.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Friend.swift; sourceTree = "<group>"; };
+		5A2764081C7496A700CB8B7D /* FriendService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FriendService.swift; sourceTree = "<group>"; };
+		5A2764091C7496A700CB8B7D /* Gift.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Gift.swift; sourceTree = "<group>"; };
+		5A27640A1C7496A700CB8B7D /* GiftDecorator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GiftDecorator.swift; sourceTree = "<group>"; };
+		5A27640B1C7496A700CB8B7D /* Graphics-Cocoa.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Graphics-Cocoa.swift"; sourceTree = "<group>"; };
+		5A27640C1C7496A700CB8B7D /* Graphics-CocoaTouch.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Graphics-CocoaTouch.swift"; sourceTree = "<group>"; };
+		5A27640D1C7496A700CB8B7D /* Human.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Human.swift; sourceTree = "<group>"; };
+		5A27640E1C7496A700CB8B7D /* PersistentContext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersistentContext.swift; sourceTree = "<group>"; };
+		5A27640F1C7496A700CB8B7D /* Product.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Product.swift; sourceTree = "<group>"; };
+		5A2764101C7496A700CB8B7D /* ProductStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductStore.swift; sourceTree = "<group>"; };
+		5A2764111C7496A700CB8B7D /* ServiceManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServiceManager.swift; sourceTree = "<group>"; };
+		5A2764121C7496A700CB8B7D /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 		5A5F74E61C74956300472CF1 /* LapsKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = LapsKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		5A5F74E91C74956300472CF1 /* LapsKit.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LapsKit.h; sourceTree = "<group>"; };
 		5A5F74EB1C74956300472CF1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		5A5F74F01C74956300472CF1 /* LapsKitTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LapsKitTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		5A5F74F51C74956300472CF1 /* LapsKitTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LapsKitTests.swift; sourceTree = "<group>"; };
 		5A5F74F71C74956300472CF1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5A5F75051C74957B00472CF1 /* LapsKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = LapsKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		5A5F750E1C74957B00472CF1 /* LapsKitTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LapsKitTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		5A5F75211C7495AB00472CF1 /* LapsKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = LapsKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		5A5F752E1C7495C900472CF1 /* LapsKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = LapsKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		5A5F75371C7495C900472CF1 /* LapsKitTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LapsKitTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -47,14 +126,109 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		5A5F75011C74957B00472CF1 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5A5F750B1C74957B00472CF1 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5A5F750F1C74957B00472CF1 /* LapsKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5A5F751D1C7495AB00472CF1 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5A5F752A1C7495C900472CF1 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5A5F75341C7495C900472CF1 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5A5F75381C7495C900472CF1 /* LapsKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		5A2764131C7496EF00CB8B7D /* Authors */ = {
+			isa = PBXGroup;
+			children = (
+				5A2764071C7496A700CB8B7D /* Friend.swift */,
+				5A2764121C7496A700CB8B7D /* User.swift */,
+			);
+			name = Authors;
+			sourceTree = "<group>";
+		};
+		5A2764141C7496F700CB8B7D /* Authentication */ = {
+			isa = PBXGroup;
+			children = (
+				5A2764041C7496A700CB8B7D /* AuthenticationSession.swift */,
+			);
+			name = Authentication;
+			sourceTree = "<group>";
+		};
+		5A2764151C74970800CB8B7D /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				5A2764171C74972C00CB8B7D /* Abstracts */,
+				5A2764131C7496EF00CB8B7D /* Authors */,
+				5A2764161C74971700CB8B7D /* Storages */,
+				5A2764051C7496A700CB8B7D /* Brand.swift */,
+				5A2764091C7496A700CB8B7D /* Gift.swift */,
+				5A27640F1C7496A700CB8B7D /* Product.swift */,
+				5A2764181C74975700CB8B7D /* Extensions */,
+			);
+			name = Models;
+			sourceTree = "<group>";
+		};
+		5A2764161C74971700CB8B7D /* Storages */ = {
+			isa = PBXGroup;
+			children = (
+				5A2764061C7496A700CB8B7D /* BrandStore.swift */,
+				5A2764101C7496A700CB8B7D /* ProductStore.swift */,
+			);
+			name = Storages;
+			sourceTree = "<group>";
+		};
+		5A2764171C74972C00CB8B7D /* Abstracts */ = {
+			isa = PBXGroup;
+			children = (
+				5A27640E1C7496A700CB8B7D /* PersistentContext.swift */,
+				5A27640D1C7496A700CB8B7D /* Human.swift */,
+			);
+			name = Abstracts;
+			sourceTree = "<group>";
+		};
+		5A2764181C74975700CB8B7D /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				5A27640B1C7496A700CB8B7D /* Graphics-Cocoa.swift */,
+				5A27640C1C7496A700CB8B7D /* Graphics-CocoaTouch.swift */,
+			);
+			name = Extensions;
+			sourceTree = "<group>";
+		};
 		5A5F74DC1C74956300472CF1 = {
 			isa = PBXGroup;
 			children = (
-				5A5F74E81C74956300472CF1 /* LapsKit */,
-				5A5F74F41C74956300472CF1 /* LapsKitTests */,
+				5A5F74E81C74956300472CF1 /* Source */,
+				5A5F74F41C74956300472CF1 /* Tests */,
 				5A5F74E71C74956300472CF1 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -64,26 +238,36 @@
 			children = (
 				5A5F74E61C74956300472CF1 /* LapsKit.framework */,
 				5A5F74F01C74956300472CF1 /* LapsKitTests.xctest */,
+				5A5F75051C74957B00472CF1 /* LapsKit.framework */,
+				5A5F750E1C74957B00472CF1 /* LapsKitTests.xctest */,
+				5A5F75211C7495AB00472CF1 /* LapsKit.framework */,
+				5A5F752E1C7495C900472CF1 /* LapsKit.framework */,
+				5A5F75371C7495C900472CF1 /* LapsKitTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		5A5F74E81C74956300472CF1 /* LapsKit */ = {
+		5A5F74E81C74956300472CF1 /* Source */ = {
 			isa = PBXGroup;
 			children = (
+				5A2764141C7496F700CB8B7D /* Authentication */,
+				5A2764151C74970800CB8B7D /* Models */,
+				5A2764081C7496A700CB8B7D /* FriendService.swift */,
+				5A27640A1C7496A700CB8B7D /* GiftDecorator.swift */,
+				5A2764111C7496A700CB8B7D /* ServiceManager.swift */,
 				5A5F74E91C74956300472CF1 /* LapsKit.h */,
 				5A5F74EB1C74956300472CF1 /* Info.plist */,
 			);
-			path = LapsKit;
+			path = Source;
 			sourceTree = "<group>";
 		};
-		5A5F74F41C74956300472CF1 /* LapsKitTests */ = {
+		5A5F74F41C74956300472CF1 /* Tests */ = {
 			isa = PBXGroup;
 			children = (
 				5A5F74F51C74956300472CF1 /* LapsKitTests.swift */,
 				5A5F74F71C74956300472CF1 /* Info.plist */,
 			);
-			path = LapsKitTests;
+			path = Tests;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -97,12 +281,33 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		5A5F75021C74957B00472CF1 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5A5F751E1C7495AB00472CF1 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5A5F752B1C7495C900472CF1 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
-		5A5F74E51C74956300472CF1 /* LapsKit */ = {
+		5A5F74E51C74956300472CF1 /* LapsKit iOS */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 5A5F74FA1C74956300472CF1 /* Build configuration list for PBXNativeTarget "LapsKit" */;
+			buildConfigurationList = 5A5F74FA1C74956300472CF1 /* Build configuration list for PBXNativeTarget "LapsKit iOS" */;
 			buildPhases = (
 				5A5F74E11C74956300472CF1 /* Sources */,
 				5A5F74E21C74956300472CF1 /* Frameworks */,
@@ -113,14 +318,14 @@
 			);
 			dependencies = (
 			);
-			name = LapsKit;
+			name = "LapsKit iOS";
 			productName = LapsKit;
 			productReference = 5A5F74E61C74956300472CF1 /* LapsKit.framework */;
 			productType = "com.apple.product-type.framework";
 		};
-		5A5F74EF1C74956300472CF1 /* LapsKitTests */ = {
+		5A5F74EF1C74956300472CF1 /* LapsKit iOS Tests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 5A5F74FD1C74956300472CF1 /* Build configuration list for PBXNativeTarget "LapsKitTests" */;
+			buildConfigurationList = 5A5F74FD1C74956300472CF1 /* Build configuration list for PBXNativeTarget "LapsKit iOS Tests" */;
 			buildPhases = (
 				5A5F74EC1C74956300472CF1 /* Sources */,
 				5A5F74ED1C74956300472CF1 /* Frameworks */,
@@ -131,9 +336,99 @@
 			dependencies = (
 				5A5F74F31C74956300472CF1 /* PBXTargetDependency */,
 			);
-			name = LapsKitTests;
+			name = "LapsKit iOS Tests";
 			productName = LapsKitTests;
 			productReference = 5A5F74F01C74956300472CF1 /* LapsKitTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		5A5F75041C74957B00472CF1 /* LapsKit OS X */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 5A5F75161C74957B00472CF1 /* Build configuration list for PBXNativeTarget "LapsKit OS X" */;
+			buildPhases = (
+				5A5F75001C74957B00472CF1 /* Sources */,
+				5A5F75011C74957B00472CF1 /* Frameworks */,
+				5A5F75021C74957B00472CF1 /* Headers */,
+				5A5F75031C74957B00472CF1 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "LapsKit OS X";
+			productName = "LapsKit OS X";
+			productReference = 5A5F75051C74957B00472CF1 /* LapsKit.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		5A5F750D1C74957B00472CF1 /* LapsKit OS X Tests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 5A5F75191C74957B00472CF1 /* Build configuration list for PBXNativeTarget "LapsKit OS X Tests" */;
+			buildPhases = (
+				5A5F750A1C74957B00472CF1 /* Sources */,
+				5A5F750B1C74957B00472CF1 /* Frameworks */,
+				5A5F750C1C74957B00472CF1 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				5A5F75111C74957B00472CF1 /* PBXTargetDependency */,
+			);
+			name = "LapsKit OS X Tests";
+			productName = "LapsKit OS XTests";
+			productReference = 5A5F750E1C74957B00472CF1 /* LapsKitTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		5A5F75201C7495AB00472CF1 /* LapsKit watchOS */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 5A5F75261C7495AB00472CF1 /* Build configuration list for PBXNativeTarget "LapsKit watchOS" */;
+			buildPhases = (
+				5A5F751C1C7495AB00472CF1 /* Sources */,
+				5A5F751D1C7495AB00472CF1 /* Frameworks */,
+				5A5F751E1C7495AB00472CF1 /* Headers */,
+				5A5F751F1C7495AB00472CF1 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "LapsKit watchOS";
+			productName = "LapsKit watchOS";
+			productReference = 5A5F75211C7495AB00472CF1 /* LapsKit.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		5A5F752D1C7495C900472CF1 /* LapsKit tvOS */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 5A5F753F1C7495C900472CF1 /* Build configuration list for PBXNativeTarget "LapsKit tvOS" */;
+			buildPhases = (
+				5A5F75291C7495C900472CF1 /* Sources */,
+				5A5F752A1C7495C900472CF1 /* Frameworks */,
+				5A5F752B1C7495C900472CF1 /* Headers */,
+				5A5F752C1C7495C900472CF1 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "LapsKit tvOS";
+			productName = "LapsKit tvOS";
+			productReference = 5A5F752E1C7495C900472CF1 /* LapsKit.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		5A5F75361C7495C900472CF1 /* LapsKit tvOSTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 5A5F75421C7495C900472CF1 /* Build configuration list for PBXNativeTarget "LapsKit tvOSTests" */;
+			buildPhases = (
+				5A5F75331C7495C900472CF1 /* Sources */,
+				5A5F75341C7495C900472CF1 /* Frameworks */,
+				5A5F75351C7495C900472CF1 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				5A5F753A1C7495C900472CF1 /* PBXTargetDependency */,
+			);
+			name = "LapsKit tvOSTests";
+			productName = "LapsKit tvOSTests";
+			productReference = 5A5F75371C7495C900472CF1 /* LapsKitTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
 /* End PBXNativeTarget section */
@@ -154,6 +449,24 @@
 						CreatedOnToolsVersion = 7.2.1;
 						DevelopmentTeam = DHCR3H4M55;
 					};
+					5A5F75041C74957B00472CF1 = {
+						CreatedOnToolsVersion = 7.2.1;
+					};
+					5A5F750D1C74957B00472CF1 = {
+						CreatedOnToolsVersion = 7.2.1;
+					};
+					5A5F75201C7495AB00472CF1 = {
+						CreatedOnToolsVersion = 7.2.1;
+						DevelopmentTeam = DHCR3H4M55;
+					};
+					5A5F752D1C7495C900472CF1 = {
+						CreatedOnToolsVersion = 7.2.1;
+						DevelopmentTeam = DHCR3H4M55;
+					};
+					5A5F75361C7495C900472CF1 = {
+						CreatedOnToolsVersion = 7.2.1;
+						DevelopmentTeam = DHCR3H4M55;
+					};
 				};
 			};
 			buildConfigurationList = 5A5F74E01C74956300472CF1 /* Build configuration list for PBXProject "LapsKit" */;
@@ -168,8 +481,13 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				5A5F74E51C74956300472CF1 /* LapsKit */,
-				5A5F74EF1C74956300472CF1 /* LapsKitTests */,
+				5A5F74E51C74956300472CF1 /* LapsKit iOS */,
+				5A5F74EF1C74956300472CF1 /* LapsKit iOS Tests */,
+				5A5F75041C74957B00472CF1 /* LapsKit OS X */,
+				5A5F750D1C74957B00472CF1 /* LapsKit OS X Tests */,
+				5A5F752D1C7495C900472CF1 /* LapsKit tvOS */,
+				5A5F75361C7495C900472CF1 /* LapsKit tvOSTests */,
+				5A5F75201C7495AB00472CF1 /* LapsKit watchOS */,
 			);
 		};
 /* End PBXProject section */
@@ -189,6 +507,41 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		5A5F75031C74957B00472CF1 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5A5F750C1C74957B00472CF1 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5A5F751F1C7495AB00472CF1 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5A5F752C1C7495C900472CF1 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5A5F75351C7495C900472CF1 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -196,6 +549,20 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5A2764211C7497D300CB8B7D /* Gift.swift in Sources */,
+				5A27641A1C7497D300CB8B7D /* PersistentContext.swift in Sources */,
+				5A2764401C7497DB00CB8B7D /* Graphics-CocoaTouch.swift in Sources */,
+				5A27641E1C7497D300CB8B7D /* BrandStore.swift in Sources */,
+				5A2764241C7497D300CB8B7D /* GiftDecorator.swift in Sources */,
+				5A2764251C7497D300CB8B7D /* ServiceManager.swift in Sources */,
+				5A27641B1C7497D300CB8B7D /* Human.swift in Sources */,
+				5A2764191C7497D300CB8B7D /* AuthenticationSession.swift in Sources */,
+				5A27641D1C7497D300CB8B7D /* User.swift in Sources */,
+				5A2764201C7497D300CB8B7D /* Brand.swift in Sources */,
+				5A2764221C7497D300CB8B7D /* Product.swift in Sources */,
+				5A27641C1C7497D300CB8B7D /* Friend.swift in Sources */,
+				5A2764231C7497D300CB8B7D /* FriendService.swift in Sources */,
+				5A27641F1C7497D300CB8B7D /* ProductStore.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -207,13 +574,87 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		5A5F75001C74957B00472CF1 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5A2764441C7497ED00CB8B7D /* Graphics-Cocoa.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5A5F750A1C74957B00472CF1 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5A5F751C1C7495AB00472CF1 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5A27643B1C7497D400CB8B7D /* Gift.swift in Sources */,
+				5A2764341C7497D400CB8B7D /* PersistentContext.swift in Sources */,
+				5A2764421C7497DD00CB8B7D /* Graphics-CocoaTouch.swift in Sources */,
+				5A2764381C7497D400CB8B7D /* BrandStore.swift in Sources */,
+				5A27643E1C7497D400CB8B7D /* GiftDecorator.swift in Sources */,
+				5A27643F1C7497D400CB8B7D /* ServiceManager.swift in Sources */,
+				5A2764351C7497D400CB8B7D /* Human.swift in Sources */,
+				5A2764331C7497D400CB8B7D /* AuthenticationSession.swift in Sources */,
+				5A2764371C7497D400CB8B7D /* User.swift in Sources */,
+				5A27643A1C7497D400CB8B7D /* Brand.swift in Sources */,
+				5A27643C1C7497D400CB8B7D /* Product.swift in Sources */,
+				5A2764361C7497D400CB8B7D /* Friend.swift in Sources */,
+				5A27643D1C7497D400CB8B7D /* FriendService.swift in Sources */,
+				5A2764391C7497D400CB8B7D /* ProductStore.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5A5F75291C7495C900472CF1 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5A27642E1C7497D400CB8B7D /* Gift.swift in Sources */,
+				5A2764271C7497D400CB8B7D /* PersistentContext.swift in Sources */,
+				5A2764411C7497DC00CB8B7D /* Graphics-CocoaTouch.swift in Sources */,
+				5A27642B1C7497D400CB8B7D /* BrandStore.swift in Sources */,
+				5A2764311C7497D400CB8B7D /* GiftDecorator.swift in Sources */,
+				5A2764321C7497D400CB8B7D /* ServiceManager.swift in Sources */,
+				5A2764281C7497D400CB8B7D /* Human.swift in Sources */,
+				5A2764261C7497D400CB8B7D /* AuthenticationSession.swift in Sources */,
+				5A27642A1C7497D400CB8B7D /* User.swift in Sources */,
+				5A27642D1C7497D400CB8B7D /* Brand.swift in Sources */,
+				5A27642F1C7497D400CB8B7D /* Product.swift in Sources */,
+				5A2764291C7497D400CB8B7D /* Friend.swift in Sources */,
+				5A2764301C7497D400CB8B7D /* FriendService.swift in Sources */,
+				5A27642C1C7497D400CB8B7D /* ProductStore.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5A5F75331C7495C900472CF1 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
 		5A5F74F31C74956300472CF1 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 5A5F74E51C74956300472CF1 /* LapsKit */;
+			target = 5A5F74E51C74956300472CF1 /* LapsKit iOS */;
 			targetProxy = 5A5F74F21C74956300472CF1 /* PBXContainerItemProxy */;
+		};
+		5A5F75111C74957B00472CF1 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 5A5F75041C74957B00472CF1 /* LapsKit OS X */;
+			targetProxy = 5A5F75101C74957B00472CF1 /* PBXContainerItemProxy */;
+		};
+		5A5F753A1C7495C900472CF1 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 5A5F752D1C7495C900472CF1 /* LapsKit tvOS */;
+			targetProxy = 5A5F75391C7495C900472CF1 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -310,31 +751,34 @@
 		5A5F74FB1C74956300472CF1 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				DEFINES_MODULE = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = LapsKit/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/Source/Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = TDW.LapsKit;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = LapsKit;
 				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 			};
 			name = Debug;
 		};
 		5A5F74FC1C74956300472CF1 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				DEFINES_MODULE = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = LapsKit/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/Source/Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = TDW.LapsKit;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = LapsKit;
 				SKIP_INSTALL = YES;
 			};
 			name = Release;
@@ -345,7 +789,7 @@
 				INFOPLIST_FILE = LapsKitTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = TDW.LapsKitTests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = LapsKitTests;
 			};
 			name = Debug;
 		};
@@ -355,7 +799,188 @@
 				INFOPLIST_FILE = LapsKitTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = TDW.LapsKitTests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = LapsKitTests;
+			};
+			name = Release;
+		};
+		5A5F75171C74957B00472CF1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_IDENTITY = "-";
+				COMBINE_HIDPI_IMAGES = YES;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				FRAMEWORK_VERSION = A;
+				INFOPLIST_FILE = "$(SRCROOT)/Source/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 10.11;
+				PRODUCT_BUNDLE_IDENTIFIER = "TDW.LapsKit-OS-X";
+				PRODUCT_NAME = LapsKit;
+				SDKROOT = macosx;
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		5A5F75181C74957B00472CF1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_IDENTITY = "-";
+				COMBINE_HIDPI_IMAGES = YES;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				FRAMEWORK_VERSION = A;
+				INFOPLIST_FILE = "$(SRCROOT)/Source/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 10.11;
+				PRODUCT_BUNDLE_IDENTIFIER = "TDW.LapsKit-OS-X";
+				PRODUCT_NAME = LapsKit;
+				SDKROOT = macosx;
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
+		5A5F751A1C74957B00472CF1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "-";
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = "LapsKit OS XTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 10.11;
+				PRODUCT_BUNDLE_IDENTIFIER = "TDW.LapsKit-OS-XTests";
+				PRODUCT_NAME = LapsKitTests;
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		5A5F751B1C74957B00472CF1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "-";
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = "LapsKit OS XTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 10.11;
+				PRODUCT_BUNDLE_IDENTIFIER = "TDW.LapsKit-OS-XTests";
+				PRODUCT_NAME = LapsKitTests;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		5A5F75271C7495AB00472CF1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				APPLICATION_EXTENSION_API_ONLY = YES;
+				CLANG_ENABLE_MODULES = YES;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "LapsKit watchOS/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "TDW.LapsKit-watchOS";
+				PRODUCT_NAME = LapsKit;
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 2.1;
+			};
+			name = Debug;
+		};
+		5A5F75281C7495AB00472CF1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				APPLICATION_EXTENSION_API_ONLY = YES;
+				CLANG_ENABLE_MODULES = YES;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "LapsKit watchOS/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "TDW.LapsKit-watchOS";
+				PRODUCT_NAME = LapsKit;
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 2.1;
+			};
+			name = Release;
+		};
+		5A5F75401C7495C900472CF1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "$(SRCROOT)/Source/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "TDW.LapsKit-tvOS";
+				PRODUCT_NAME = LapsKit;
+				SDKROOT = appletvos;
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = 3;
+				TVOS_DEPLOYMENT_TARGET = 9.1;
+			};
+			name = Debug;
+		};
+		5A5F75411C7495C900472CF1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "$(SRCROOT)/Source/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "TDW.LapsKit-tvOS";
+				PRODUCT_NAME = LapsKit;
+				SDKROOT = appletvos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = 3;
+				TVOS_DEPLOYMENT_TARGET = 9.1;
+			};
+			name = Release;
+		};
+		5A5F75431C7495C900472CF1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = "LapsKit tvOSTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "TDW.LapsKit-tvOSTests";
+				PRODUCT_NAME = LapsKitTests;
+				SDKROOT = appletvos;
+				TVOS_DEPLOYMENT_TARGET = 9.1;
+			};
+			name = Debug;
+		};
+		5A5F75441C7495C900472CF1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = "LapsKit tvOSTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "TDW.LapsKit-tvOSTests";
+				PRODUCT_NAME = LapsKitTests;
+				SDKROOT = appletvos;
+				TVOS_DEPLOYMENT_TARGET = 9.1;
 			};
 			name = Release;
 		};
@@ -371,21 +996,68 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		5A5F74FA1C74956300472CF1 /* Build configuration list for PBXNativeTarget "LapsKit" */ = {
+		5A5F74FA1C74956300472CF1 /* Build configuration list for PBXNativeTarget "LapsKit iOS" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				5A5F74FB1C74956300472CF1 /* Debug */,
 				5A5F74FC1C74956300472CF1 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
-		5A5F74FD1C74956300472CF1 /* Build configuration list for PBXNativeTarget "LapsKitTests" */ = {
+		5A5F74FD1C74956300472CF1 /* Build configuration list for PBXNativeTarget "LapsKit iOS Tests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				5A5F74FE1C74956300472CF1 /* Debug */,
 				5A5F74FF1C74956300472CF1 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		5A5F75161C74957B00472CF1 /* Build configuration list for PBXNativeTarget "LapsKit OS X" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5A5F75171C74957B00472CF1 /* Debug */,
+				5A5F75181C74957B00472CF1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		5A5F75191C74957B00472CF1 /* Build configuration list for PBXNativeTarget "LapsKit OS X Tests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5A5F751A1C74957B00472CF1 /* Debug */,
+				5A5F751B1C74957B00472CF1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		5A5F75261C7495AB00472CF1 /* Build configuration list for PBXNativeTarget "LapsKit watchOS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5A5F75271C7495AB00472CF1 /* Debug */,
+				5A5F75281C7495AB00472CF1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		5A5F753F1C7495C900472CF1 /* Build configuration list for PBXNativeTarget "LapsKit tvOS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5A5F75401C7495C900472CF1 /* Debug */,
+				5A5F75411C7495C900472CF1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		5A5F75421C7495C900472CF1 /* Build configuration list for PBXNativeTarget "LapsKit tvOSTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5A5F75431C7495C900472CF1 /* Debug */,
+				5A5F75441C7495C900472CF1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

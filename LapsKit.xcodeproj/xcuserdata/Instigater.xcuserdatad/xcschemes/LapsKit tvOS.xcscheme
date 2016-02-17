@@ -14,9 +14,9 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "5A5F74E51C74956300472CF1"
-               BuildableName = "LapsKit iOS.framework"
-               BlueprintName = "LapsKit iOS"
+               BlueprintIdentifier = "5A5F752D1C7495C900472CF1"
+               BuildableName = "LapsKit tvOS.framework"
+               BlueprintName = "LapsKit tvOS"
                ReferencedContainer = "container:LapsKit.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
@@ -32,9 +32,9 @@
             skipped = "NO">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "5A5F74EF1C74956300472CF1"
-               BuildableName = "LapsKit iOS Tests.xctest"
-               BlueprintName = "LapsKit iOS Tests"
+               BlueprintIdentifier = "5A5F75361C7495C900472CF1"
+               BuildableName = "LapsKit tvOSTests.xctest"
+               BlueprintName = "LapsKit tvOSTests"
                ReferencedContainer = "container:LapsKit.xcodeproj">
             </BuildableReference>
          </TestableReference>
@@ -42,9 +42,9 @@
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "5A5F74E51C74956300472CF1"
-            BuildableName = "LapsKit iOS.framework"
-            BlueprintName = "LapsKit iOS"
+            BlueprintIdentifier = "5A5F752D1C7495C900472CF1"
+            BuildableName = "LapsKit tvOS.framework"
+            BlueprintName = "LapsKit tvOS"
             ReferencedContainer = "container:LapsKit.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
@@ -64,9 +64,9 @@
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "5A5F74E51C74956300472CF1"
-            BuildableName = "LapsKit iOS.framework"
-            BlueprintName = "LapsKit iOS"
+            BlueprintIdentifier = "5A5F752D1C7495C900472CF1"
+            BuildableName = "LapsKit tvOS.framework"
+            BlueprintName = "LapsKit tvOS"
             ReferencedContainer = "container:LapsKit.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
@@ -82,9 +82,9 @@
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "5A5F74E51C74956300472CF1"
-            BuildableName = "LapsKit iOS.framework"
-            BlueprintName = "LapsKit iOS"
+            BlueprintIdentifier = "5A5F752D1C7495C900472CF1"
+            BuildableName = "LapsKit tvOS.framework"
+            BlueprintName = "LapsKit tvOS"
             ReferencedContainer = "container:LapsKit.xcodeproj">
          </BuildableReference>
       </MacroExpansion>

@@ -4,6 +4,21 @@
 <dict>
 	<key>SchemeUserState</key>
 	<dict>
+		<key>LapsKit OS X.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>1</integer>
+		</dict>
+		<key>LapsKit tvOS.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>3</integer>
+		</dict>
+		<key>LapsKit watchOS.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>2</integer>
+		</dict>
 		<key>LapsKit.xcscheme</key>
 		<dict>
 			<key>orderHint</key>
@@ -18,6 +33,31 @@
 			<true/>
 		</dict>
 		<key>5A5F74EF1C74956300472CF1</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>5A5F75041C74957B00472CF1</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>5A5F750D1C74957B00472CF1</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>5A5F75201C7495AB00472CF1</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>5A5F752D1C7495C900472CF1</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>5A5F75361C7495C900472CF1</key>
 		<dict>
 			<key>primary</key>
 			<true/>

@@ -14,9 +14,9 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "5A5F74E51C74956300472CF1"
-               BuildableName = "LapsKit iOS.framework"
-               BlueprintName = "LapsKit iOS"
+               BlueprintIdentifier = "5A5F75201C7495AB00472CF1"
+               BuildableName = "LapsKit watchOS.framework"
+               BlueprintName = "LapsKit watchOS"
                ReferencedContainer = "container:LapsKit.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
@@ -28,26 +28,7 @@
       selectedLauncherIdentifier = "Xcode.DebuggerFoundation.Launcher.LLDB"
       shouldUseLaunchSchemeArgsEnv = "YES">
       <Testables>
-         <TestableReference
-            skipped = "NO">
-            <BuildableReference
-               BuildableIdentifier = "primary"
-               BlueprintIdentifier = "5A5F74EF1C74956300472CF1"
-               BuildableName = "LapsKit iOS Tests.xctest"
-               BlueprintName = "LapsKit iOS Tests"
-               ReferencedContainer = "container:LapsKit.xcodeproj">
-            </BuildableReference>
-         </TestableReference>
       </Testables>
-      <MacroExpansion>
-         <BuildableReference
-            BuildableIdentifier = "primary"
-            BlueprintIdentifier = "5A5F74E51C74956300472CF1"
-            BuildableName = "LapsKit iOS.framework"
-            BlueprintName = "LapsKit iOS"
-            ReferencedContainer = "container:LapsKit.xcodeproj">
-         </BuildableReference>
-      </MacroExpansion>
       <AdditionalOptions>
       </AdditionalOptions>
    </TestAction>
@@ -64,9 +45,9 @@
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "5A5F74E51C74956300472CF1"
-            BuildableName = "LapsKit iOS.framework"
-            BlueprintName = "LapsKit iOS"
+            BlueprintIdentifier = "5A5F75201C7495AB00472CF1"
+            BuildableName = "LapsKit watchOS.framework"
+            BlueprintName = "LapsKit watchOS"
             ReferencedContainer = "container:LapsKit.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
@@ -82,9 +63,9 @@
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "5A5F74E51C74956300472CF1"
-            BuildableName = "LapsKit iOS.framework"
-            BlueprintName = "LapsKit iOS"
+            BlueprintIdentifier = "5A5F75201C7495AB00472CF1"
+            BuildableName = "LapsKit watchOS.framework"
+            BlueprintName = "LapsKit watchOS"
             ReferencedContainer = "container:LapsKit.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
