@@ -29,7 +29,7 @@ extension Brand {
      */
     var colors: [NSColor] {
         return _colors.map() { color in
-            return NSColor(CGColor: color)
+            return NSColor(CGColor: color)!
         }
     }
 }
@@ -42,7 +42,7 @@ extension Product {
      */
     var colors: [NSColor] {
         return _colors.map() { color in
-            return NSColor(CGColor: color)
+            return NSColor(CGColor: color)!
         }
     }
     
