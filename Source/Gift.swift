@@ -21,6 +21,6 @@
 
 import Foundation
 
-class Gift {
+class Gift : PersistentContext {
     
 }

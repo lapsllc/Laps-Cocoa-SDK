@@ -26,12 +26,12 @@ public class Brand : PersistentContext {
     //  Identity
     let name: String
     let _colors: [CGColor]
-//    let products: [Product]
+    let products: [Product]?
     
-    init(identifier: String, name: String, _colors: [CGColor]) {
+    init(identifier: String, name: String, _colors: [CGColor], products: [Product]?) {
         self.name = name
         self._colors = _colors
-//        self.products = products
+        self.products = products
         
         super.init(identifier: identifier)
     }

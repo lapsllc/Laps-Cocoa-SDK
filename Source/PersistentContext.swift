@@ -21,13 +21,30 @@
 
 import Foundation
 
-public class PersistentContext : Equatable {
+/**
+ An abstract class referring to users of the application.
+ - note: **Swift** does not handle abstract-typed classes, but in general, the instances of this class should be neither copied nor created.
+ */
+public class PersistentContext : Hashable, CustomStringConvertible {
     /**
      The database identifier of persistent object.
      - note: The general persistence of the objects living in database will be assumed to be permanent. However, in production, you should not rely on this assumption. Additional checks on ODM had better be performed.
      */
     let identifier: String
+    
+    /**
+     The validity of persistent object.
+     - note: The general persistence of the objects living in database will be assumed to be permanent. If this property is invalid, it is more likely to be inconsistent because the changes will not affect database.
+     */
     private(set) public var valid = true
+    
+    public var hashValue: Int {
+        return identifier.hashValue
+    }
+    
+    public var description: String {
+        return "PersistentContext: Database identifier:\(identifier), valid:\(valid)"
+    }
     
     init(identifier: String) {
         self.identifier = identifier
@@ -43,6 +60,10 @@ public class PersistentContext : Equatable {
         }
         
         valid = false
+    }
+    
+    static func fetchAll() {
+        
     }
     
     func synchronize() {

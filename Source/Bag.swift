@@ -21,8 +21,42 @@
 
 import Foundation
 
-class BrandStore {
+public class Bag<T: PersistentContext> : CustomStringConvertible {
+    private var storage = Dictionary<T, Int>()
     
+    init(_ items : T ...) {
+        for item in items {
+            self.addItem(item)
+        }
+    }
+    
+    func addItem(item : T) {
+        if let count = storage[item] {
+            storage[item] = count + 1
+        } else {
+            storage[item] = 1
+        }
+    }
+    
+    func removeItem(item: T) {
+        if let count = storage[item] {
+            if (count > 1) {
+                storage[item] = count - 1
+            } else {
+                storage.removeValueForKey(item)
+            }
+        }
+    }
+    
+    public var description : String {
+        return storage.description
+    }
+    
+    func updateAll() {
+        for (eachObject, _) in storage {
+            eachObject.synchronize()
+        }
+    }
 }
 
 

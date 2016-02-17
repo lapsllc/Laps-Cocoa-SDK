@@ -25,7 +25,7 @@ import Foundation
  An abstract class referring to users of the application.
  - note: **Swift** does not handle abstract-typed classes, but in general, the instances of this class should be neither copied nor created.
 */
-public class Human {
+public class Human : CustomStringConvertible {
     public enum Gender {
         case Male
         case Female
@@ -51,4 +51,27 @@ public class Human {
     init(identifier: String) {
         self.identifier = identifier
     }
+    
+    public var description: String {
+        return "[\(identifier)]: \(surname), \(name) (\(age))"
+    }
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
