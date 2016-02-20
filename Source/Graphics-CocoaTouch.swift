@@ -21,6 +21,16 @@
 
 import UIKit
 
+func colorMapper(colors: [Color]) -> [UIColor] {
+    return colors.map() { color in
+        return UIColor(
+            red: CGFloat(color.red),
+            green: CGFloat(color.green),
+            blue: CGFloat(color.blue),
+            alpha: CGFloat(color.alpha))
+    }
+}
+
 extension Brand {
     /**
      The colors of brand.
@@ -28,9 +38,7 @@ extension Brand {
      - returns: An array of colors.
      */
     var colors: [UIColor] {
-        return _colors.map() { color in
-            return UIColor(CGColor: color)
-        }
+        return colorMapper(_colors)
     }
 }
 
@@ -41,9 +49,7 @@ extension Product {
      - returns: An array of colors.
      */
     var colors: [UIColor] {
-        return _colors.map() { color in
-            return UIColor(CGColor: color)
-        }
+        return colorMapper(_colors)
     }
     
     /**

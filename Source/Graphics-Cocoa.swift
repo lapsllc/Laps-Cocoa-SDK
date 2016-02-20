@@ -21,6 +21,16 @@
 
 import Cocoa
 
+func colorMapper(colors: [Color]) -> [NSColor] {
+    return colors.map() { color in
+        return NSColor(
+            red: CGFloat(color.red),
+            green: CGFloat(color.green),
+            blue: CGFloat(color.blue),
+            alpha: CGFloat(color.alpha))
+    }
+}
+
 extension Brand {
     /**
      The colors of brand.
@@ -28,9 +38,7 @@ extension Brand {
      - returns: An array of colors.
      */
     var colors: [NSColor] {
-        return _colors.map() { color in
-            return NSColor(CGColor: color)!
-        }
+        return colorMapper(_colors)
     }
 }
 
@@ -41,9 +49,7 @@ extension Product {
      - returns: An array of colors.
      */
     var colors: [NSColor] {
-        return _colors.map() { color in
-            return NSColor(CGColor: color)!
-        }
+        return colorMapper(_colors)
     }
     
     /**

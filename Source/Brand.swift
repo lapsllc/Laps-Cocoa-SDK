@@ -26,13 +26,14 @@ import SwiftyJSON
 
 public class Brand : PersistentContext {
     //  Identity
-    let name: String
-    let _colors: [[Float]]
-    let products: [Product]?
+    var name: String
+    
+    var _colors: [Color]
+    var products: [Product]?
     
     var DBdescription: String?
     
-    init(identifier: String, name: String, _colors: [[Float]], products: [Product]?) {
+    init(identifier: String, name: String, _colors: [Color], products: [Product]?) {
         self.name = name
         self._colors = _colors
         self.products = products
@@ -40,7 +41,7 @@ public class Brand : PersistentContext {
         super.init(identifier: identifier)
     }
     
-    private static func parse(json: JSON) -> Brand {
+    static private func parse(json: JSON) -> Brand {
         let identifier = json["_id"].stringValue
         
         let name = json["name"].stringValue
@@ -51,17 +52,15 @@ public class Brand : PersistentContext {
             //  Create products and assign them.
         }
         
-        var colors = [[Float]]()
+        var colors = [Color]()
         
         if let colorArray = json["colors"].array {
-            for eachObject in colorArray {
-                var floats = [Float]()
-                
-                floats.append(eachObject["red"].floatValue / 256)
-                floats.append(eachObject["green"].floatValue / 256)
-                floats.append(eachObject["blue"].floatValue / 256)
-                
-                colors.append(floats)
+            colors = colorArray.map() { object in
+                return Color(
+                    red: object["red"].floatValue / 256,
+                    green: object["green"].floatValue / 256,
+                    blue: object["blue"].floatValue / 256,
+                    alpha: object["alpha"].float != nil ? object["alpha"].float!:256 / 256)
             }
         }
         
@@ -72,8 +71,31 @@ public class Brand : PersistentContext {
         return brand
     }
     
-    static public func index(callback: ([Brand]?, NSError?) -> Void) {
-        Alamofire.request(.GET, "http://localhost:9000/api/brands")
+    static public func feed(limit: Int? = nil, offset: Int? = nil, callback: ([Brand]?, NSError?) -> Void) {
+        var params = [String : String]()
+        
+        params["ref"] = "latest"
+        
+        func load(param: Int?, var into dictionary: [String: String], key: String, fallback: Int) {
+            if let paramValue = param {
+                dictionary[key] = String(paramValue)
+            } else {
+                dictionary[key] = String(fallback)
+            }
+        }
+        
+        load(limit, into: params, key: "limit", fallback: 8)
+        load(offset, into: params, key: "offset", fallback: 0)
+        
+        if let limitValue = limit {
+            params["limit"] = String(limitValue)
+        }
+        
+        if let offsetValue = offset {
+            params["offset"] = String(offsetValue)
+        }
+        
+        Alamofire.request(.GET, "http://localhost:9000/api/brands", parameters: params)
             .responseJSON { response in
                 switch response.result {
                 case .Success:
@@ -96,19 +118,19 @@ public class Brand : PersistentContext {
         }
     }
     
-    static public func show(callback: (Brand?, NSError?) -> Void) {
-        Alamofire.request(.GET, "http://localhost:9000/api/brands")
-            .responseJSON { response in
-                switch response.result {
-                case .Success:
-                    if let value = response.result.value {
-                        callback(parse(JSON(value)), nil)
-                    }
-                case .Failure(let error):
-                    callback(nil, error)
-                }
-        }
-    }
+//    static public func show(callback: (Brand?, NSError?) -> Void) {
+//        Alamofire.request(.GET, "http://localhost:9000/api/brands")
+//            .responseJSON { response in
+//                switch response.result {
+//                case .Success:
+//                    if let value = response.result.value {
+//                        callback(parse(JSON(value)), nil)
+//                    }
+//                case .Failure(let error):
+//                    callback(nil, error)
+//                }
+//        }
+//    }
     
     override func synchronize() {
         //  refetch json.

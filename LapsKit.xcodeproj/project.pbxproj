@@ -42,8 +42,6 @@
 		5A27643E1C7497D400CB8B7D /* GiftDecorator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A27640A1C7496A700CB8B7D /* GiftDecorator.swift */; };
 		5A27643F1C7497D400CB8B7D /* ServiceManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A2764111C7496A700CB8B7D /* ServiceManager.swift */; };
 		5A2764401C7497DB00CB8B7D /* Graphics-CocoaTouch.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A27640C1C7496A700CB8B7D /* Graphics-CocoaTouch.swift */; };
-		5A2764411C7497DC00CB8B7D /* Graphics-CocoaTouch.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A27640C1C7496A700CB8B7D /* Graphics-CocoaTouch.swift */; };
-		5A2764421C7497DD00CB8B7D /* Graphics-CocoaTouch.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A27640C1C7496A700CB8B7D /* Graphics-CocoaTouch.swift */; };
 		5A2764441C7497ED00CB8B7D /* Graphics-Cocoa.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A27640B1C7496A700CB8B7D /* Graphics-Cocoa.swift */; };
 		5A2764761C749C2400CB8B7D /* Alamofire.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5A2764501C749BEE00CB8B7D /* Alamofire.framework */; };
 		5A2764771C749C2400CB8B7D /* SwiftyJSON.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5A2764691C749C0800CB8B7D /* SwiftyJSON.framework */; };
@@ -68,6 +66,11 @@
 		5A5F74F61C74956300472CF1 /* LapsKitTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A5F74F51C74956300472CF1 /* LapsKitTests.swift */; };
 		5A5F750F1C74957B00472CF1 /* LapsKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5A5F75051C74957B00472CF1 /* LapsKit.framework */; };
 		5A5F75381C7495C900472CF1 /* LapsKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5A5F752E1C7495C900472CF1 /* LapsKit.framework */; };
+		5A8EA6801C78CB3000C8A4EE /* Color.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A8EA67F1C78CB3000C8A4EE /* Color.swift */; };
+		5A8EA6811C78CB3000C8A4EE /* Color.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A8EA67F1C78CB3000C8A4EE /* Color.swift */; };
+		5A8EA6821C78CB3000C8A4EE /* Color.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A8EA67F1C78CB3000C8A4EE /* Color.swift */; };
+		5A8EA6831C78CB3000C8A4EE /* Color.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A8EA67F1C78CB3000C8A4EE /* Color.swift */; };
+		5A8EA6861C78CBE000C8A4EE /* Brand.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A8EA6851C78CBE000C8A4EE /* Brand.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -220,6 +223,9 @@
 		5A5F75211C7495AB00472CF1 /* LapsKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = LapsKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		5A5F752E1C7495C900472CF1 /* LapsKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = LapsKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		5A5F75371C7495C900472CF1 /* LapsKitTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LapsKitTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		5A8EA67F1C78CB3000C8A4EE /* Color.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Color.swift; sourceTree = "<group>"; };
+		5A8EA6841C78CBDF00C8A4EE /* LapsKit tvOSTests-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "LapsKit tvOSTests-Bridging-Header.h"; sourceTree = "<group>"; };
+		5A8EA6851C78CBE000C8A4EE /* Brand.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Brand.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -335,6 +341,7 @@
 		5A2764181C74975700CB8B7D /* Extensions */ = {
 			isa = PBXGroup;
 			children = (
+				5A8EA67F1C78CB3000C8A4EE /* Color.swift */,
 				5A27640B1C7496A700CB8B7D /* Graphics-Cocoa.swift */,
 				5A27640C1C7496A700CB8B7D /* Graphics-CocoaTouch.swift */,
 			);
@@ -420,7 +427,9 @@
 			isa = PBXGroup;
 			children = (
 				5A5F74F51C74956300472CF1 /* LapsKitTests.swift */,
+				5A8EA6851C78CBE000C8A4EE /* Brand.swift */,
 				5A5F74F71C74956300472CF1 /* Info.plist */,
+				5A8EA6841C78CBDF00C8A4EE /* LapsKit tvOSTests-Bridging-Header.h */,
 			);
 			path = Tests;
 			sourceTree = "<group>";
@@ -824,6 +833,7 @@
 				5A27641B1C7497D300CB8B7D /* Human.swift in Sources */,
 				5A2764191C7497D300CB8B7D /* AuthenticationSession.swift in Sources */,
 				5A27641D1C7497D300CB8B7D /* User.swift in Sources */,
+				5A8EA6801C78CB3000C8A4EE /* Color.swift in Sources */,
 				5A2764201C7497D300CB8B7D /* Brand.swift in Sources */,
 				5A2764221C7497D300CB8B7D /* Product.swift in Sources */,
 				5A27641C1C7497D300CB8B7D /* Friend.swift in Sources */,
@@ -836,6 +846,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				5A5F74F61C74956300472CF1 /* LapsKitTests.swift in Sources */,
+				5A8EA6861C78CBE000C8A4EE /* Brand.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -852,6 +863,7 @@
 				5A2764851C749C6700CB8B7D /* Product.swift in Sources */,
 				5A2764871C749C6700CB8B7D /* GiftDecorator.swift in Sources */,
 				5A27647F1C749C6700CB8B7D /* Friend.swift in Sources */,
+				5A8EA6811C78CB3000C8A4EE /* Color.swift in Sources */,
 				5A2764441C7497ED00CB8B7D /* Graphics-Cocoa.swift in Sources */,
 				5A2764811C749C6700CB8B7D /* Bag.swift in Sources */,
 				5A27647E1C749C6700CB8B7D /* Human.swift in Sources */,
@@ -872,10 +884,10 @@
 			files = (
 				5A27643B1C7497D400CB8B7D /* Gift.swift in Sources */,
 				5A2764341C7497D400CB8B7D /* PersistentContext.swift in Sources */,
-				5A2764421C7497DD00CB8B7D /* Graphics-CocoaTouch.swift in Sources */,
 				5A2764381C7497D400CB8B7D /* Bag.swift in Sources */,
 				5A27643E1C7497D400CB8B7D /* GiftDecorator.swift in Sources */,
 				5A27643F1C7497D400CB8B7D /* ServiceManager.swift in Sources */,
+				5A8EA6831C78CB3000C8A4EE /* Color.swift in Sources */,
 				5A2764351C7497D400CB8B7D /* Human.swift in Sources */,
 				5A2764331C7497D400CB8B7D /* AuthenticationSession.swift in Sources */,
 				5A2764371C7497D400CB8B7D /* User.swift in Sources */,
@@ -891,10 +903,10 @@
 			files = (
 				5A27642E1C7497D400CB8B7D /* Gift.swift in Sources */,
 				5A2764271C7497D400CB8B7D /* PersistentContext.swift in Sources */,
-				5A2764411C7497DC00CB8B7D /* Graphics-CocoaTouch.swift in Sources */,
 				5A27642B1C7497D400CB8B7D /* Bag.swift in Sources */,
 				5A2764311C7497D400CB8B7D /* GiftDecorator.swift in Sources */,
 				5A2764321C7497D400CB8B7D /* ServiceManager.swift in Sources */,
+				5A8EA6821C78CB3000C8A4EE /* Color.swift in Sources */,
 				5A2764281C7497D400CB8B7D /* Human.swift in Sources */,
 				5A2764261C7497D400CB8B7D /* AuthenticationSession.swift in Sources */,
 				5A27642A1C7497D400CB8B7D /* User.swift in Sources */,
@@ -1059,7 +1071,7 @@
 		5A5F74FE1C74956300472CF1 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				INFOPLIST_FILE = LapsKitTests/Info.plist;
+				INFOPLIST_FILE = Tests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = TDW.LapsKitTests;
 				PRODUCT_NAME = LapsKitTests;
@@ -1069,7 +1081,7 @@
 		5A5F74FF1C74956300472CF1 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				INFOPLIST_FILE = LapsKitTests/Info.plist;
+				INFOPLIST_FILE = Tests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = TDW.LapsKitTests;
 				PRODUCT_NAME = LapsKitTests;
@@ -1236,11 +1248,14 @@
 		5A5F75431C7495C900472CF1 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				INFOPLIST_FILE = "LapsKit tvOSTests/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "TDW.LapsKit-tvOSTests";
 				PRODUCT_NAME = LapsKitTests;
 				SDKROOT = appletvos;
+				SWIFT_OBJC_BRIDGING_HEADER = "Tests/LapsKit tvOSTests-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				TVOS_DEPLOYMENT_TARGET = 9.1;
 			};
 			name = Debug;
@@ -1248,11 +1263,13 @@
 		5A5F75441C7495C900472CF1 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				INFOPLIST_FILE = "LapsKit tvOSTests/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "TDW.LapsKit-tvOSTests";
 				PRODUCT_NAME = LapsKitTests;
 				SDKROOT = appletvos;
+				SWIFT_OBJC_BRIDGING_HEADER = "Tests/LapsKit tvOSTests-Bridging-Header.h";
 				TVOS_DEPLOYMENT_TARGET = 9.1;
 			};
 			name = Release;

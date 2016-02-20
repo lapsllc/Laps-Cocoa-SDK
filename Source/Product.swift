@@ -24,10 +24,10 @@ import CoreGraphics
 
 public class Product : PersistentContext {
     public let name: String
-    let _colors: [CGColor]
+    let _colors: [Color]
     internal(set) public var _thumbnail: CGImage?
     
-    init(identifier: String, name: String, colors: [CGColor], image: CGImage) {
+    init(identifier: String, name: String, colors: [Color], image: CGImage) {
         self.name = name
         self._colors = colors
         self._thumbnail = image
