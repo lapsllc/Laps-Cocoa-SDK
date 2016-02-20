@@ -31,19 +31,20 @@ public class Brand : PersistentContext {
     var _colors: [Color]
     var products: [Product]?
     
-    var DBdescription: String?
+    var information: String?
     
-    init(identifier: String, name: String, _colors: [Color], products: [Product]?) {
+    init(identifier: String, name: String, _colors: [Color], products: [Product]?, information: String? = nil) {
         self.name = name
         self._colors = _colors
         self.products = products
+        self.information = information
         
         super.init(identifier: identifier)
     }
     
     static private func parse(json: JSON) -> Brand {
+        //  Assign the real database identifier to the object.
         let identifier = json["_id"].stringValue
-        
         let name = json["name"].stringValue
         
         var popularProducts = [Product]()
@@ -64,42 +65,68 @@ public class Brand : PersistentContext {
             }
         }
         
+        //  Create brand object with collected information.
         let brand = Brand(identifier: identifier, name: name, _colors: colors, products: popularProducts)
         
-        brand.DBdescription = json["description"].string
+        //  Assign
+        brand.information = json["description"].string
         
         return brand
     }
     
-    static public func feed(limit: Int? = nil, offset: Int? = nil, callback: ([Brand]?, NSError?) -> Void) {
-        var params = [String : String]()
+    static private var fetchDates = [String: NSDate]()
+    
+    //  MARK: - Web Service Outlets
+    
+    public enum FeedError : ErrorType {
+        case UnexpectedLimitValue(limit: UInt)
+        case NoPreviousFetch
+    }
+    
+    /**
+     Fetches brand feed from the web service.
+     - parameter limit: The limit of quantity of brands fetched. The default value is 8, which is the highest value. If higher value is given, this will throw an exception. *optional*
+     - parameter offset: The offset of quantity of brands fetched. This is likely used in pagination. If no value is given, no objects will be skipped. *optional*
+     - parameter callback: The callback of the asynchronous operation.
+     */
+    static public func feed(limit limit: UInt = 8, offset: UInt = 0, callback: ([Brand]?, NSError?) -> Void) throws {
+        var parameters = [String : String]()
         
-        params["ref"] = "latest"
+        //  The user is not an admin, give a referrer.
+        parameters["ref"] = "latest"
         
-        func load(param: Int?, var into dictionary: [String: String], key: String, fallback: Int) {
-            if let paramValue = param {
-                dictionary[key] = String(paramValue)
-            } else {
-                dictionary[key] = String(fallback)
-            }
+        //  Pagination Control
+        guard offset == 0 || fetchDates["feed"] != nil else {
+            //  There was no previous fetch.
+            throw FeedError.NoPreviousFetch
         }
         
-        load(limit, into: params, key: "limit", fallback: 8)
-        load(offset, into: params, key: "offset", fallback: 0)
-        
-        if let limitValue = limit {
-            params["limit"] = String(limitValue)
+        //  Set offset
+        if offset == 0 {
+            //  Set the lastFetched to the date, because it is a refresh.
+            fetchDates["feed"] = NSDate()
+        } else {
+            //  Set the after parameter to the date stored, because it is a pagination
+            //  The date will be in the form of "2016-02-20 18:34:19 +0000".
+            parameters["after"] = fetchDates.description
         }
         
-        if let offsetValue = offset {
-            params["offset"] = String(offsetValue)
+        parameters["offset"] = String(offset)
+        
+        //  Set limit
+        guard limit <= 8 else {
+            throw FeedError.UnexpectedLimitValue(limit: limit)
         }
         
-        Alamofire.request(.GET, "http://localhost:9000/api/brands", parameters: params)
+        parameters["limit"] = String(limit)
+        
+        //  Fire the HTTP request to the web server.
+        Alamofire.request(.GET, "http://localhost:9000/api/brands", parameters: parameters)
             .responseJSON { response in
                 switch response.result {
                 case .Success:
                     if let value = response.result.value {
+                        //  Map them into objects.
                         var brands = [Brand]()
                         
                         if let array = JSON(value).array {
@@ -109,28 +136,24 @@ public class Brand : PersistentContext {
                             
                             callback(brands, nil)
                         } else {
+                            //  Response have no payload.
                             callback(nil, NSError(domain: "LapsKit", code: 100, userInfo: ["description": "Malformed JSON"]))
                         }
                     }
                 case .Failure(let error):
+                    //  Oops, there was an error.
                     callback(nil, error)
                 }
         }
     }
     
-//    static public func show(callback: (Brand?, NSError?) -> Void) {
-//        Alamofire.request(.GET, "http://localhost:9000/api/brands")
-//            .responseJSON { response in
-//                switch response.result {
-//                case .Success:
-//                    if let value = response.result.value {
-//                        callback(parse(JSON(value)), nil)
-//                    }
-//                case .Failure(let error):
-//                    callback(nil, error)
-//                }
-//        }
-//    }
+    public func products(callback: (Brand?, NSError?) -> Void) {
+        var parameters = [String : String]()
+        
+        parameters["brand"] = identifier
+        
+        Alamofire.request(.GET, "http://localhost:9000/api/products", parameters: parameters)
+    }
     
     override func synchronize() {
         //  refetch json.
