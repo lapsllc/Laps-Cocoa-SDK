@@ -15,7 +15,7 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "5A5F75041C74957B00472CF1"
-               BuildableName = "LapsKit OS X.framework"
+               BuildableName = "LapsKit.framework"
                BlueprintName = "LapsKit OS X"
                ReferencedContainer = "container:LapsKit.xcodeproj">
             </BuildableReference>
@@ -33,7 +33,7 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "5A5F750D1C74957B00472CF1"
-               BuildableName = "LapsKit OS X Tests.xctest"
+               BuildableName = "LapsKitTests.xctest"
                BlueprintName = "LapsKit OS X Tests"
                ReferencedContainer = "container:LapsKit.xcodeproj">
             </BuildableReference>
@@ -43,7 +43,7 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "5A5F75041C74957B00472CF1"
-            BuildableName = "LapsKit OS X.framework"
+            BuildableName = "LapsKit.framework"
             BlueprintName = "LapsKit OS X"
             ReferencedContainer = "container:LapsKit.xcodeproj">
          </BuildableReference>
@@ -65,7 +65,7 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "5A5F75041C74957B00472CF1"
-            BuildableName = "LapsKit OS X.framework"
+            BuildableName = "LapsKit.framework"
             BlueprintName = "LapsKit OS X"
             ReferencedContainer = "container:LapsKit.xcodeproj">
          </BuildableReference>
@@ -83,7 +83,7 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "5A5F75041C74957B00472CF1"
-            BuildableName = "LapsKit OS X.framework"
+            BuildableName = "LapsKit.framework"
             BlueprintName = "LapsKit OS X"
             ReferencedContainer = "container:LapsKit.xcodeproj">
          </BuildableReference>

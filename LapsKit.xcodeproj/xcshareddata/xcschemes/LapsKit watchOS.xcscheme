@@ -15,7 +15,7 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "5A5F75201C7495AB00472CF1"
-               BuildableName = "LapsKit watchOS.framework"
+               BuildableName = "LapsKit.framework"
                BlueprintName = "LapsKit watchOS"
                ReferencedContainer = "container:LapsKit.xcodeproj">
             </BuildableReference>
@@ -46,7 +46,7 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "5A5F75201C7495AB00472CF1"
-            BuildableName = "LapsKit watchOS.framework"
+            BuildableName = "LapsKit.framework"
             BlueprintName = "LapsKit watchOS"
             ReferencedContainer = "container:LapsKit.xcodeproj">
          </BuildableReference>
@@ -64,7 +64,7 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "5A5F75201C7495AB00472CF1"
-            BuildableName = "LapsKit watchOS.framework"
+            BuildableName = "LapsKit.framework"
             BlueprintName = "LapsKit watchOS"
             ReferencedContainer = "container:LapsKit.xcodeproj">
          </BuildableReference>

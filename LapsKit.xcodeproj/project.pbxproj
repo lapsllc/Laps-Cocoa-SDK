@@ -25,7 +25,6 @@
 		5A2764291C7497D400CB8B7D /* Friend.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A2764071C7496A700CB8B7D /* Friend.swift */; };
 		5A27642A1C7497D400CB8B7D /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A2764121C7496A700CB8B7D /* User.swift */; };
 		5A27642B1C7497D400CB8B7D /* Bag.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A2764061C7496A700CB8B7D /* Bag.swift */; };
-		5A27642D1C7497D400CB8B7D /* Brand.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A2764051C7496A700CB8B7D /* Brand.swift */; };
 		5A27642E1C7497D400CB8B7D /* Gift.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A2764091C7496A700CB8B7D /* Gift.swift */; };
 		5A27642F1C7497D400CB8B7D /* Product.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A27640F1C7496A700CB8B7D /* Product.swift */; };
 		5A2764301C7497D400CB8B7D /* FriendService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A2764081C7496A700CB8B7D /* FriendService.swift */; };
@@ -37,7 +36,6 @@
 		5A2764361C7497D400CB8B7D /* Friend.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A2764071C7496A700CB8B7D /* Friend.swift */; };
 		5A2764371C7497D400CB8B7D /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A2764121C7496A700CB8B7D /* User.swift */; };
 		5A2764381C7497D400CB8B7D /* Bag.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A2764061C7496A700CB8B7D /* Bag.swift */; };
-		5A27643A1C7497D400CB8B7D /* Brand.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A2764051C7496A700CB8B7D /* Brand.swift */; };
 		5A27643B1C7497D400CB8B7D /* Gift.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A2764091C7496A700CB8B7D /* Gift.swift */; };
 		5A27643C1C7497D400CB8B7D /* Product.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A27640F1C7496A700CB8B7D /* Product.swift */; };
 		5A27643D1C7497D400CB8B7D /* FriendService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A2764081C7496A700CB8B7D /* FriendService.swift */; };
@@ -881,7 +879,6 @@
 				5A2764351C7497D400CB8B7D /* Human.swift in Sources */,
 				5A2764331C7497D400CB8B7D /* AuthenticationSession.swift in Sources */,
 				5A2764371C7497D400CB8B7D /* User.swift in Sources */,
-				5A27643A1C7497D400CB8B7D /* Brand.swift in Sources */,
 				5A27643C1C7497D400CB8B7D /* Product.swift in Sources */,
 				5A2764361C7497D400CB8B7D /* Friend.swift in Sources */,
 				5A27643D1C7497D400CB8B7D /* FriendService.swift in Sources */,
@@ -901,7 +898,6 @@
 				5A2764281C7497D400CB8B7D /* Human.swift in Sources */,
 				5A2764261C7497D400CB8B7D /* AuthenticationSession.swift in Sources */,
 				5A27642A1C7497D400CB8B7D /* User.swift in Sources */,
-				5A27642D1C7497D400CB8B7D /* Brand.swift in Sources */,
 				5A27642F1C7497D400CB8B7D /* Product.swift in Sources */,
 				5A2764291C7497D400CB8B7D /* Friend.swift in Sources */,
 				5A2764301C7497D400CB8B7D /* FriendService.swift in Sources */,

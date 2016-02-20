@@ -15,7 +15,7 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "5A5F752D1C7495C900472CF1"
-               BuildableName = "LapsKit tvOS.framework"
+               BuildableName = "LapsKit.framework"
                BlueprintName = "LapsKit tvOS"
                ReferencedContainer = "container:LapsKit.xcodeproj">
             </BuildableReference>
@@ -33,7 +33,7 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "5A5F75361C7495C900472CF1"
-               BuildableName = "LapsKit tvOSTests.xctest"
+               BuildableName = "LapsKitTests.xctest"
                BlueprintName = "LapsKit tvOSTests"
                ReferencedContainer = "container:LapsKit.xcodeproj">
             </BuildableReference>
@@ -43,7 +43,7 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "5A5F752D1C7495C900472CF1"
-            BuildableName = "LapsKit tvOS.framework"
+            BuildableName = "LapsKit.framework"
             BlueprintName = "LapsKit tvOS"
             ReferencedContainer = "container:LapsKit.xcodeproj">
          </BuildableReference>
@@ -65,7 +65,7 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "5A5F752D1C7495C900472CF1"
-            BuildableName = "LapsKit tvOS.framework"
+            BuildableName = "LapsKit.framework"
             BlueprintName = "LapsKit tvOS"
             ReferencedContainer = "container:LapsKit.xcodeproj">
          </BuildableReference>
@@ -83,7 +83,7 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "5A5F752D1C7495C900472CF1"
-            BuildableName = "LapsKit tvOS.framework"
+            BuildableName = "LapsKit.framework"
             BlueprintName = "LapsKit tvOS"
             ReferencedContainer = "container:LapsKit.xcodeproj">
          </BuildableReference>
