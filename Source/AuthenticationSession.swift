@@ -41,6 +41,10 @@ public class AuthenticationSession {
      */
     public var delegate: AuthenticationSessionDelegate?
     
+    public init() {
+        
+    }
+    
     /**
      Challenges access token taken from social media APIs to the web service.
      - parameter accessToken: A JWT or Base64 encoded string access token retrieved previously from a social media API.
