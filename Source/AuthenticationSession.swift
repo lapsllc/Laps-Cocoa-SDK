@@ -39,15 +39,7 @@ public class AuthenticationSession {
     /**
      A delegate object to observe session.
      */
-    public let delegate: AuthenticationSessionDelegate
-    
-    /**
-     Initializes a new authentication session with given delegate.
-     - parameter delegate: A delegate object to observe session.
-     */
-    public init(delegate: AuthenticationSessionDelegate) {
-        self.delegate = delegate
-    }
+    public var delegate: AuthenticationSessionDelegate?
     
     /**
      Challenges access token taken from social media APIs to the web service.
@@ -76,12 +68,12 @@ public class AuthenticationSession {
                         
                         //  TODO: user.image should be mapped
                         
-                        self.delegate.didFinishAuthenticating(user, error: nil)
+                        self.delegate!.didFinishAuthenticating(user, error: nil)
                     } else {
-                        self.delegate.didFinishAuthenticating(nil, error: NSError(domain: NSCocoaErrorDomain, code: 100, userInfo: [ "description": "Server successfully responded but there was no payload." ]))
+                        self.delegate!.didFinishAuthenticating(nil, error: NSError(domain: NSCocoaErrorDomain, code: 100, userInfo: [ "description": "Server successfully responded but there was no payload." ]))
                     }
                 case .Failure(let error):
-                    self.delegate.didFinishAuthenticating(nil, error: error)
+                    self.delegate!.didFinishAuthenticating(nil, error: error)
                 }
         }
     }
