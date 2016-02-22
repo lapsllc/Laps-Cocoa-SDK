@@ -39,10 +39,10 @@ public class AuthenticationSession {
     /**
      A delegate object to observe session.
      */
-    public var delegate: AuthenticationSessionDelegate?
+    public let delegate: AuthenticationSessionDelegate
     
-    public init() {
-        
+    public init(delegate: AuthenticationSessionDelegate) {
+        self.delegate = delegate
     }
     
     /**
@@ -72,12 +72,12 @@ public class AuthenticationSession {
                         
                         //  TODO: user.image should be mapped
                         
-                        self.delegate!.didFinishAuthenticating(user, error: nil)
+                        self.delegate.didFinishAuthenticating(user, error: nil)
                     } else {
-                        self.delegate!.didFinishAuthenticating(nil, error: NSError(domain: NSCocoaErrorDomain, code: 100, userInfo: [ "description": "Server successfully responded but there was no payload." ]))
+                        self.delegate.didFinishAuthenticating(nil, error: NSError(domain: NSCocoaErrorDomain, code: 100, userInfo: [ "description": "Server successfully responded but there was no payload." ]))
                     }
                 case .Failure(let error):
-                    self.delegate!.didFinishAuthenticating(nil, error: error)
+                    self.delegate.didFinishAuthenticating(nil, error: error)
                 }
         }
     }
