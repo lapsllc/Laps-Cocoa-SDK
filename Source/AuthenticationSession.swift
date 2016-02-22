@@ -36,8 +36,6 @@ public protocol AuthenticationSessionDelegate {
 }
 
 public class AuthenticationSession {
-    private let baseURL = NSURL(string: NSBundle.mainBundle().objectForInfoDictionaryKey("LAPWebServiceBaseURL") as! String)!
-    
     /**
      A delegate object to observe session.
      */
@@ -56,7 +54,7 @@ public class AuthenticationSession {
      - parameter accessToken: A JWT or Base64 encoded string access token retrieved previously from a social media API.
      */
     public func challenge(accessToken: String) {
-        Alamofire.request(.POST, baseURL.absoluteString + "/auth/", parameters: [ "accessToken": accessToken ], encoding: .URL)
+        Alamofire.request(.POST, "http://54.93.111.103:8080" + "/auth/", parameters: [ "accessToken": accessToken ], encoding: .URL)
             .responseJSON { response in
                 switch response.result {
                 case .Success:

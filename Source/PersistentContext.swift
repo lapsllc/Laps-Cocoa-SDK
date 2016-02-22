@@ -66,8 +66,13 @@ public class PersistentContext : Hashable, CustomStringConvertible {
         
     }
     
-    func synchronize() {
-        //  some synchronization code
+    /**
+     Asynchronously synchronizes the object with database.
+     - parameter callback: A callback passed to the asynchronous function to be executed in the end. *optional*
+     - note: This method works non-blocking whether it takes callback argument, or not.
+     */
+    func synchronize(callback: (NSError? -> Void)? = nil) {
+        //  no context
     }
 }
 

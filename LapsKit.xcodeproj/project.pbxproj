@@ -70,7 +70,12 @@
 		5A8EA6811C78CB3000C8A4EE /* Color.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A8EA67F1C78CB3000C8A4EE /* Color.swift */; };
 		5A8EA6821C78CB3000C8A4EE /* Color.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A8EA67F1C78CB3000C8A4EE /* Color.swift */; };
 		5A8EA6831C78CB3000C8A4EE /* Color.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A8EA67F1C78CB3000C8A4EE /* Color.swift */; };
-		5A8EA6861C78CBE000C8A4EE /* Brand.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A8EA6851C78CBE000C8A4EE /* Brand.swift */; };
+		5AED3E581C7B07B8006FC1F6 /* LapsKitTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A5F74F51C74956300472CF1 /* LapsKitTests.swift */; };
+		5AED3E591C7B07BD006FC1F6 /* Brand.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A8EA6851C78CBE000C8A4EE /* Brand.swift */; };
+		5AED3E5A1C7B081C006FC1F6 /* Brand.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A8EA6851C78CBE000C8A4EE /* Brand.swift */; };
+		5AED3E5B1C7B08BB006FC1F6 /* Brand.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A8EA6851C78CBE000C8A4EE /* Brand.swift */; };
+		5AED3E5C1C7B08C5006FC1F6 /* Brand.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A2764051C7496A700CB8B7D /* Brand.swift */; };
+		5AED3E5D1C7B08C6006FC1F6 /* Brand.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A2764051C7496A700CB8B7D /* Brand.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -846,7 +851,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				5A5F74F61C74956300472CF1 /* LapsKitTests.swift in Sources */,
-				5A8EA6861C78CBE000C8A4EE /* Brand.swift in Sources */,
+				5AED3E5A1C7B081C006FC1F6 /* Brand.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -875,6 +880,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5AED3E581C7B07B8006FC1F6 /* LapsKitTests.swift in Sources */,
+				5AED3E591C7B07BD006FC1F6 /* Brand.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -890,6 +897,7 @@
 				5A8EA6831C78CB3000C8A4EE /* Color.swift in Sources */,
 				5A2764351C7497D400CB8B7D /* Human.swift in Sources */,
 				5A2764331C7497D400CB8B7D /* AuthenticationSession.swift in Sources */,
+				5AED3E5D1C7B08C6006FC1F6 /* Brand.swift in Sources */,
 				5A2764371C7497D400CB8B7D /* User.swift in Sources */,
 				5A27643C1C7497D400CB8B7D /* Product.swift in Sources */,
 				5A2764361C7497D400CB8B7D /* Friend.swift in Sources */,
@@ -909,6 +917,7 @@
 				5A8EA6821C78CB3000C8A4EE /* Color.swift in Sources */,
 				5A2764281C7497D400CB8B7D /* Human.swift in Sources */,
 				5A2764261C7497D400CB8B7D /* AuthenticationSession.swift in Sources */,
+				5AED3E5C1C7B08C5006FC1F6 /* Brand.swift in Sources */,
 				5A27642A1C7497D400CB8B7D /* User.swift in Sources */,
 				5A27642F1C7497D400CB8B7D /* Product.swift in Sources */,
 				5A2764291C7497D400CB8B7D /* Friend.swift in Sources */,
@@ -920,6 +929,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5AED3E5B1C7B08BB006FC1F6 /* Brand.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1138,7 +1148,7 @@
 			buildSettings = {
 				CODE_SIGN_IDENTITY = "-";
 				COMBINE_HIDPI_IMAGES = YES;
-				INFOPLIST_FILE = "LapsKit OS XTests/Info.plist";
+				INFOPLIST_FILE = Tests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
 				MACOSX_DEPLOYMENT_TARGET = 10.11;
 				PRODUCT_BUNDLE_IDENTIFIER = "TDW.LapsKit-OS-XTests";
@@ -1152,7 +1162,7 @@
 			buildSettings = {
 				CODE_SIGN_IDENTITY = "-";
 				COMBINE_HIDPI_IMAGES = YES;
-				INFOPLIST_FILE = "LapsKit OS XTests/Info.plist";
+				INFOPLIST_FILE = Tests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
 				MACOSX_DEPLOYMENT_TARGET = 10.11;
 				PRODUCT_BUNDLE_IDENTIFIER = "TDW.LapsKit-OS-XTests";
@@ -1249,7 +1259,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CLANG_ENABLE_MODULES = YES;
-				INFOPLIST_FILE = "LapsKit tvOSTests/Info.plist";
+				INFOPLIST_FILE = Tests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "TDW.LapsKit-tvOSTests";
 				PRODUCT_NAME = LapsKitTests;
@@ -1264,7 +1274,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CLANG_ENABLE_MODULES = YES;
-				INFOPLIST_FILE = "LapsKit tvOSTests/Info.plist";
+				INFOPLIST_FILE = Tests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "TDW.LapsKit-tvOSTests";
 				PRODUCT_NAME = LapsKitTests;

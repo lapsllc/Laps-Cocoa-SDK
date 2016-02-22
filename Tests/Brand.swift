@@ -21,8 +21,8 @@ class Brand: XCTestCase {
         super.tearDown()
     }
 
-    func testBrandDefault() {
-        let expectation = self.expectationWithDescription("Testing -index method")
+    func testFetchDefault() {
+        let expectation = self.expectationWithDescription("Testing -index method with nil arguments")
         
         do {
             try LapsKit.Brand.feed() { brands, error in
@@ -50,7 +50,7 @@ class Brand: XCTestCase {
         }
     }
     
-    func testBrandWithLimit() {
+    func testFetchWithLimit() {
         let limit: UInt = 1
         
         let expectation = self.expectationWithDescription("Testing -index method")
@@ -82,7 +82,7 @@ class Brand: XCTestCase {
         }
     }
     
-    func testBrandWithOffset() {
+    func testFetchWithOffset() {
         let offset: UInt = 1
         
         let expectation = self.expectationWithDescription("Testing -index method")

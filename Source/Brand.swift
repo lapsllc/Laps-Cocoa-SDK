@@ -121,7 +121,7 @@ public class Brand : PersistentContext {
         parameters["limit"] = String(limit)
         
         //  Fire the HTTP request to the web server.
-        Alamofire.request(.GET, "http://localhost:9000/api/brands", parameters: parameters)
+        Alamofire.request(.GET, "http://54.93.111.103:8080/api/brands", parameters: parameters)
             .responseJSON { response in
                 switch response.result {
                 case .Success:
@@ -137,7 +137,7 @@ public class Brand : PersistentContext {
                             callback(brands, nil)
                         } else {
                             //  Response have no payload.
-                            callback(nil, NSError(domain: "LapsKit", code: 100, userInfo: ["description": "Malformed JSON"]))
+                            callback(nil, NSError(domain: "LapsKit", code: 100, userInfo: [ "description": "Malformed JSON" ]))
                         }
                     }
                 case .Failure(let error):
@@ -152,11 +152,35 @@ public class Brand : PersistentContext {
         
         parameters["brand"] = identifier
         
-        Alamofire.request(.GET, "http://localhost:9000/api/products", parameters: parameters)
+        Alamofire.request(.GET, "http://54.93.111.103:8080/api/products", parameters: parameters)
     }
     
-    override func synchronize() {
-        //  refetch json.
+    override func synchronize(callback: (NSError? -> Void)? = nil) {
+        Alamofire.request(.GET, "http://54.93.111.103:8080/api/\(identifier)")
+        .responseJSON { response in
+            switch response.result {
+            case .Success:
+                if let value = response.result.value {
+                    let brand = Brand.parse(JSON(value))
+                    
+                    self.name = brand.name
+                    self._colors = brand._colors
+                    self.products = brand.products
+                    self.information = brand.information
+                    
+                    if (callback != nil) {
+                        callback!(nil)
+                    }
+                } else if (callback != nil) {
+                    callback!(NSError(domain: "LapsKit", code: 100, userInfo: [ "description": "Malformed JSON" ]))
+                }
+            case .Failure(let error):
+                //  Oops, there was an error.
+                if (callback != nil) {
+                    callback!(error)
+                }
+            }
+        }
     }
 }
 
