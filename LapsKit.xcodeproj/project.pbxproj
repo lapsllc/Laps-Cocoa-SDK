@@ -71,11 +71,12 @@
 		5A8EA6821C78CB3000C8A4EE /* Color.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A8EA67F1C78CB3000C8A4EE /* Color.swift */; };
 		5A8EA6831C78CB3000C8A4EE /* Color.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A8EA67F1C78CB3000C8A4EE /* Color.swift */; };
 		5AED3E581C7B07B8006FC1F6 /* LapsKitTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A5F74F51C74956300472CF1 /* LapsKitTests.swift */; };
-		5AED3E591C7B07BD006FC1F6 /* Brand.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A8EA6851C78CBE000C8A4EE /* Brand.swift */; };
-		5AED3E5A1C7B081C006FC1F6 /* Brand.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A8EA6851C78CBE000C8A4EE /* Brand.swift */; };
-		5AED3E5B1C7B08BB006FC1F6 /* Brand.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A8EA6851C78CBE000C8A4EE /* Brand.swift */; };
 		5AED3E5C1C7B08C5006FC1F6 /* Brand.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A2764051C7496A700CB8B7D /* Brand.swift */; };
 		5AED3E5D1C7B08C6006FC1F6 /* Brand.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A2764051C7496A700CB8B7D /* Brand.swift */; };
+		5AED3E6B1C7B3ADE006FC1F6 /* LapsKitTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A5F74F51C74956300472CF1 /* LapsKitTests.swift */; };
+		5AED3E9C1C7B3E60006FC1F6 /* Brand.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A8EA6851C78CBE000C8A4EE /* Brand.swift */; };
+		5AED3E9D1C7B3E7A006FC1F6 /* Brand.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A8EA6851C78CBE000C8A4EE /* Brand.swift */; };
+		5AED3E9E1C7B3E7B006FC1F6 /* Brand.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A8EA6851C78CBE000C8A4EE /* Brand.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -432,11 +433,19 @@
 			isa = PBXGroup;
 			children = (
 				5A5F74F51C74956300472CF1 /* LapsKitTests.swift */,
-				5A8EA6851C78CBE000C8A4EE /* Brand.swift */,
+				5AED3E6A1C7B3839006FC1F6 /* Models */,
 				5A5F74F71C74956300472CF1 /* Info.plist */,
 				5A8EA6841C78CBDF00C8A4EE /* LapsKit tvOSTests-Bridging-Header.h */,
 			);
 			path = Tests;
+			sourceTree = "<group>";
+		};
+		5AED3E6A1C7B3839006FC1F6 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				5A8EA6851C78CBE000C8A4EE /* Brand.swift */,
+			);
+			name = Models;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -851,7 +860,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				5A5F74F61C74956300472CF1 /* LapsKitTests.swift in Sources */,
-				5AED3E5A1C7B081C006FC1F6 /* Brand.swift in Sources */,
+				5AED3E9E1C7B3E7B006FC1F6 /* Brand.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -881,7 +890,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				5AED3E581C7B07B8006FC1F6 /* LapsKitTests.swift in Sources */,
-				5AED3E591C7B07BD006FC1F6 /* Brand.swift in Sources */,
+				5AED3E9D1C7B3E7A006FC1F6 /* Brand.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -929,7 +938,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				5AED3E5B1C7B08BB006FC1F6 /* Brand.swift in Sources */,
+				5AED3E6B1C7B3ADE006FC1F6 /* LapsKitTests.swift in Sources */,
+				5AED3E9C1C7B3E60006FC1F6 /* Brand.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

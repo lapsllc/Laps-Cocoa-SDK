@@ -1,5 +1,5 @@
 
-// Copyright (c) 2016 The Digital Warehouse (http://www.thedigitalwarehouse.com)
+// Copyright (c) 2016 Laps Foundation
 //
 // Permission is hereby granted, free of charge, to any person obtaining a copy
 // of this software and associated documentation files (the "Software"), to deal
@@ -32,34 +32,16 @@ public class PersistentContext : Hashable, CustomStringConvertible {
      */
     let identifier: String
     
-    /**
-     The validity of persistent object.
-     - note: The general persistence of the objects living in database will be assumed to be permanent. If this property is invalid, it is more likely to be inconsistent because the changes will not affect database.
-     */
-    private(set) public var valid = true
-    
     public var hashValue: Int {
         return identifier.hashValue
     }
     
     public var description: String {
-        return "PersistentContext: Database identifier:\(identifier), valid:\(valid)"
+        return "PersistentContext: Database identifier:\(identifier)"
     }
     
     init(identifier: String) {
         self.identifier = identifier
-    }
-    
-    public enum PersistentContextError : ErrorType {
-        case InvalidContext
-    }
-    
-    public func invalidate() throws {
-        guard valid else {
-            throw PersistentContextError.InvalidContext
-        }
-        
-        valid = false
     }
     
     static func fetchAll() {

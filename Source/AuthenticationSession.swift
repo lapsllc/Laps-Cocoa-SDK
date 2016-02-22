@@ -1,5 +1,5 @@
 
-// Copyright (c) 2016 The Digital Warehouse (http://www.thedigitalwarehouse.com)
+// Copyright (c) 2016 Laps Foundation
 //
 // Permission is hereby granted, free of charge, to any person obtaining a copy
 // of this software and associated documentation files (the "Software"), to deal
@@ -45,7 +45,7 @@ public class AuthenticationSession {
      Initializes a new authentication session with given delegate.
      - parameter delegate: A delegate object to observe session.
      */
-    init(delegate: AuthenticationSessionDelegate) {
+    public init(delegate: AuthenticationSessionDelegate) {
         self.delegate = delegate
     }
     
